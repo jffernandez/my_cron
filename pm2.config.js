@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'market-backend',
-      script: './build/src/index.js',
+      name: 'my_cron',
+      script: './build/index.js',
       instances: '1',
       exec_mode: 'fork',
       out_file: './logs/out.log',
