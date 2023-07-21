@@ -1,0 +1,40 @@
+{
+  "name": "my_cron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/index.ts",
+    "start": "ts-node src/index.ts",
+    "build": "tsc -p .",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check --loglevel error ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cron": "^2.0.1",
+    "@types/node": "^20.4.2",
+    "@types/node-telegram-bot-api": "^0.61.6",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^5.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "cron": "^2.3.1",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.6.4",
+    "node-telegram-bot-api": "^0.61.0"
+  }
+}
